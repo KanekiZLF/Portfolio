@@ -1,0 +1,51 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-image: 
+    radial-gradient(
+        circle at 50% -20.71%, 
+        #ffff93 0, 
+        #f4ff9a 7.14%,
+        #dcffa2 14.29%,
+        #c3ffaa 21.43%, 
+        #a8ffb1 28.57%, 
+        #8dffb7 35.71%,
+        #70ffbb 42.86%, 
+        #53f2bc 50%, 
+        #33e3bc 57.14%, 
+        #00d5bc 64.29%, 
+        #00cabd 71.43%, 
+        #00c0be 78.57%, 
+        #00b8c0 85.71%, 
+        #00b2c3 92.86%, 
+        #00aec7 100%);
+}
+
+#menu-h ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #070707;
+    float: right;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color:#d9fafa;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    transition: background .4s;
+
+}
+
+#menu-h ul li a:hover {
+    background-color:#9cda0d;
+
+}
