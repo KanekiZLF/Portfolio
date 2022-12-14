@@ -25,18 +25,18 @@ html, body{
         #00aec7 100%);
 }
 
-#menu-h ul {
+#menu, .lf {
     list-style-type: none;
     padding: 0;
     background-color: #070707;
-    float: right;
+    text-align: right;
 }
 
-#menu-h ul li {
+#menu ul li, .lf {
     display: inline;
 }
 
-#menu-h ul li a {
+#menu ul li a, .lf {
     color:#d9fafa;
     text-decoration: none;
     padding: 20px;
@@ -45,7 +45,9 @@ html, body{
 
 }
 
-#menu-h ul li a:hover {
+#menu ul li a:hover {
     background-color:#9cda0d;
 
 }
+
+
