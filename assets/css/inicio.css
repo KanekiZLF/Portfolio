@@ -1,153 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Prompt:wght@100&display=swap');
-
-/* criando barra de navegação */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Press+Start+2P&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-ul {
     list-style: none;
+    box-sizing: border-box;
+}
+
+    /* Inicio do Menu */
+
+.header {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
     flex-wrap: wrap;
+    background: rgba(196, 196, 196, 0.11);
+    position: fixed;
+    width:100%;
 }
 
-ul li {
-    margin: 10px;
-}
-
-nav {
-    width: 50%;
-}
 
 a {
     text-decoration: none;
-    display: block;
-    color: rgb(250, 250, 250);
+    color: white;
     font-size: 20px;
-    transition: ease-in-out .4s;
+    font-family: 'Bree Serif', serif;
+    transition: easyease-in-out 0.3s;
 }
 
 a:hover {
-    color: rgb(208, 255, 0);
+    color: yellow;
 }
 
-img {
-    display: block;
-}
-
-.logo {
-    padding: 15px;
-}
-
-.barra {
-    width: 100%;
-    background: rgba(196, 196, 196, 0.11);
-    backdrop-filter: blur(10px);
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.452);
-}
-
-.barra-container {
+.menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-.centralizador {
-    margin: 0 auto;
+.menu li {
+    margin-left: 0;
 }
 
-/* barra de navegação terminada */
+.menu li a {
+    display: block;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.logo2 {
+    max-width: 70px;
+    display: block;
+    margin-left: 50px;
+}
+
+/* Fim do Menu */
 
 #inicio {
-    background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
+    background: linear-gradient(60deg, #352728 50%, #8E5D52 50%);
     height: 100vh;
     display: flex;
     align-items: center;
 }
- 
- /* Controla espaçamento */
-.esquerda {
-    margin-left: 0;
-    margin-left: 100px;
+
+.meu-nome {
+    font-size: 60px;;
 }
 
-.direita {
-    margin: 0;
-    margin-right: 10px;
-    
+.game2 {
+    width: 400px;
+    height: 250px;
 }
 
-.altura{
+.centralizar {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ajuste-altura{
     width: 100%;
 }
 
-.organizador {
+.ajustador {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-right: -56px;
+    margin-left: -150px;
 }
 
 .apresentacao {
     max-width: 741px;
     color:white;
-    margin-left: 50px;
-    margin-right: 0px;
 }
 
 .descricao {
-    font-size: 25px;
+    font-size: 40px;
     grid-area: descricao;
 }
 
-.meu-nome {
-    font-size: 50px;;
+.container {
+    display: flex;
+    justify-content: center;
 }
+
 
 .meu-nome::after{
     content: '|';
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
-}
-
-
-.linkedin {
-    width: 479px;
-    height: 85px;
-    background-color:#8E5D52;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 62px;
-}
-
-.linkedin a {
-    width: 100%;
-    padding: 25px 0;
-}
-
-.link {
-    font-size:25px;
-    width:50%;
-    text-align: center;
-    padding: 12px 0 ;
-    transition: ease-in-out 0.3s;
-}
-
-.link:hover {
-    letter-spacing: 5px;
-    color: white;
 }
 
 @keyframes pisca {
@@ -158,170 +120,6 @@ img {
         opacity: 0;
     }
 }
-
-@media (max-width:1200px) {
-    
-    #inicio{
-        background: #352728;
-        height: auto;
-    }
-
-    .organizador {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        padding-bottom: 50px;
-    }
-
-    .apresentacao {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .linkedin {
-        width: 479px;
-        margin-top: 15px;
-    }
-
-    .esquerda {
-        margin-left: 15px;
-    }
-
-    .direita {
-        margin-right: 15px;
-    }
-
-}
-
-@media (max-width:950px) {
-    .desenho {
-        padding: 25px 0;
-    }
-
-    .altura{
-        display: flex;
-        justify-content: center;
-    }
-    .organizador {
-        max-width: 300px;
-        display: grid;
-        grid-template-columns: 300px;
-        grid-template-areas:  
-        "desenho"
-        "descricao";
-        line-height: 35px;
-    }
-
-    #inicio {
-        display: flex;
-        justify-content: center;
-    }
-
-    .descricao {
-        font-size: 20px;
-    }
-
-    .meu-nome {
-        font-size: 30px;
-    }
-
-    .esquerda, .direita {
-        margin: 0;
-    }
-
-    .logo {
-        margin-top: 25px;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-    .barra{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .menu-centro{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .centralizador{
-        margin: 0;
-    }
-    .barra-conteiner {
-        width: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-    .barra-conteiner .logo{
-        width: 100%
-    }
-
-    .direita ul {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .direita ul a {
-        font-size: 35px;
-    }
-
-    /* configurando menu mobile */
-    .barra {
-        display: block;
-        position: fixed;
-        top: -100vh;
-        transition: ease 0.3s;
-    }
-    
-    .close-menu-label::after {
-        content:'≡';
-        position: fixed;
-        z-index: 2;
-        top: 2rem;
-        right: 2rem;
-        background: #792e33;
-        color: white;
-        font-size: 3rem;
-        line-height:3rem;
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    /* ✕ */
-    .close-menu:checked~.barra {
-        top: 0;
-    }
-
-    .close-menu:checked~.close-menu-label::after {
-        display: block;
-        content: '✕';
-    }
-
-    .barra .barra-conteiner ul li a{
-        font-size: 25px;
-    }
-
-    .barra {
-        background: rgba(0, 0, 0, 0.527);
-    }
-
-}
-
 
 
 
