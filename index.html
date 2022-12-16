@@ -6,10 +6,13 @@
     <title>Portfólio Luiz F. R. Pimentel</title>
     <!-- Navegação e início -->
     <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/sobre-mim.css">
     <!-- Fonte Letras Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Script do Slider de Imagens -->
+    <script src="assets/js/slider.js" defer></script>
 
 
 </head>
@@ -32,22 +35,38 @@
 <section id="inicio">
  <div class="ajuste-altura">
   <div class="centralizar">
-  <di class="ajustador">
-   <div class="apresentacao">
-    <p class="descricao">
+   <div class="ajustador">
+    <div class="apresentacao">
+     <p class="descricao">
       Oi, eu sou <br />
-      <span style="display: inline" class="meu-nome">
+       <span style="display: inline" class="meu-nome">
       Luiz Fernando.</span>
-      <br /> Desenvolvedor Back-end
-      </p>
-     </div>
-     <div class="container">
-        <img class="game2" src="assets/img/Tela teste.png" alt="Tela de jogo">
+        <br /> Desenvolvedor Back-end
+        </p>
        </div>
+       <div class="container">
+       <div class="container-img">
+       <buttton id="buttom-prev"><img src="assets/img/arrow.png" alt="seta"></buttton>
+       <div class="img">
+        <img src="assets/img/thumb.png" alt="imagem1" class="slider on">
+        <img src="assets/img/thumbKurumi.png" alt="imagem2" class="slider">
+      </div>
+     <button id="buttom-next"><img src="assets/img/arrow.png" alt="seta2"></button>
+     </div>
     </div>
    </div>
-   </div>
-  </section>  
+  </div>
+ </div>
+</section>
+
+
+
+  <!-- <section class="sobre-mim">
+<div class="centralizar">
+<div class="nome"> Meu nome</div> 
+</div>
+</section> -->
+
  </body>
 </html>
 
