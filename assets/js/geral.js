@@ -1,4 +1,5 @@
-// Maquina de Escrever
+// Maquina de escrever
+
 const meuNome = document.querySelector('.meu-nome')
 
 function typeWriter(el) {

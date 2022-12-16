@@ -63,7 +63,7 @@ a:hover {
 }
 
 .meu-nome {
-    font-size: 70px;
+    font-size: 60px;;
 }
 
 .centralizar {
@@ -90,7 +90,6 @@ a:hover {
 }
 
 .descricao {
-    font-size: 30px;
     font-size: 40px;
     grid-area: descricao;
 }
@@ -107,10 +106,6 @@ a:hover {
     animation: pisca .7s infinite;
 }
 
-.animado {
-    animation: name .4s 1s normal;
-}
-
 @keyframes pisca {
     0%, 100% {
         opacity: 1;
@@ -120,65 +115,4 @@ a:hover {
     }
 }
 
-@keyframes name {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    } 
-}
 
-
-        /* Inicio Slider de Imagens  */
-
-.img {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 700px;
-}
-
-.slider {
-    position: absolute;
-    transition: opacity .2s;
-    opacity: 0;
-    border-radius: 10px;
-    width: 450px;
-    height: auto;
-}
-
-.on {
-    opacity: 1;
-}
-
-#buttom-prev, #buttom-next {
-    width: 100px;
-    height: auto;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-
-}
-
-#buttom-prev img, #buttom-next img {
-    width: 100%;
-    height: 100%;
-
-}
-
-#buttom-prev {
-    transform: rotate(180deg);
-}
-
-.container-img {
-    display: flex;
-    width: 600px;
-    height: 350px;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-    /* Fim Slider de Imagens */
