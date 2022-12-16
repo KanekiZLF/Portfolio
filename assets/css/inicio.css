@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+    /* Inicio do Menu */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(196, 196, 196, 0.11);
+    position: fixed;
+    width:100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    transition: easyease-in-out 0.3s;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+.logo2 {
+    max-width: 70px;
+    display: block;
+    margin-left: 50px;
+}
+
+/* Fim do Menu */
+
+#inicio {
+    background: linear-gradient(60deg, #352728 50%, #FE8362 50%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.meu-nome {
+    font-size: 70px;
+
+}
+
+.centralizar {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ajuste-altura{
+    width: 100%;
+}
+
+.ajustador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: -130px;
+    margin-left: -115px;
+}
+
+.apresentacao {
+    max-width: 741px;
+    color:white;
+}
+
+.descricao {
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.meu-nome::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+.animado {
+    animation: name .4s 1s normal;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes name {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    } 
+}
+
+
+
+
+

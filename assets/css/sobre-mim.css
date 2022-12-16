@@ -1,0 +1,13 @@
+/* Sobre Mim */
+
+.sobre-mim {
+    height: 100vh;
+    background-color: #3f2b2d;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+}
+
+
