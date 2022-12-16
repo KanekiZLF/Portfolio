@@ -56,7 +56,7 @@ a:hover {
 /* Fim do Menu */
 
 #inicio {
-    background: linear-gradient(60deg, #352728 50%, #8E5D52 50%);
+    background: linear-gradient(60deg, #352728 50%, #FE8362 50%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -64,11 +64,6 @@ a:hover {
 
 .meu-nome {
     font-size: 60px;;
-}
-
-.game2 {
-    width: 400px;
-    height: 250px;
 }
 
 .centralizar {
@@ -85,8 +80,8 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: -56px;
-    margin-left: -150px;
+    margin-right: -130px;
+    margin-left: -115px;
 }
 
 .apresentacao {
@@ -104,7 +99,6 @@ a:hover {
     justify-content: center;
 }
 
-
 .meu-nome::after{
     content: '|';
     margin-left: 5px;
@@ -120,6 +114,59 @@ a:hover {
         opacity: 0;
     }
 }
+
+        /* Inicio Slider de Imagens  */
+
+.img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+}
+
+.slider {
+    position: absolute;
+    transition: opacity .2s;
+    opacity: 0;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+}
+
+.on {
+    opacity: 1;
+}
+
+#buttom-prev, #buttom-next {
+    width: 100px;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+#buttom-prev img, #buttom-next img {
+    width: 100%;
+    height: 100%;
+
+}
+
+#buttom-prev {
+    transform: rotate(180deg);
+}
+
+.container-img {
+    display: flex;
+    width: 600px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+    /* Fim Slider de Imagens */
 
 
 
