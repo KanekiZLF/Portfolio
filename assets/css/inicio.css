@@ -63,12 +63,7 @@ a:hover {
 }
 
 .meu-nome {
-<<<<<<< HEAD
     font-size: 70px;
-
-=======
-    font-size: 60px;;
->>>>>>> c7fa3ecb7ab41f3f48c4edb055e63382c08fd6b4
 }
 
 .centralizar {
@@ -95,12 +90,9 @@ a:hover {
 }
 
 .descricao {
-<<<<<<< HEAD
     font-size: 30px;
-=======
     font-size: 40px;
     grid-area: descricao;
->>>>>>> c7fa3ecb7ab41f3f48c4edb055e63382c08fd6b4
 }
 
 .container {
@@ -115,13 +107,10 @@ a:hover {
     animation: pisca .7s infinite;
 }
 
-<<<<<<< HEAD
 .animado {
     animation: name .4s 1s normal;
 }
 
-=======
->>>>>>> c7fa3ecb7ab41f3f48c4edb055e63382c08fd6b4
 @keyframes pisca {
     0%, 100% {
         opacity: 1;
@@ -131,7 +120,6 @@ a:hover {
     }
 }
 
-<<<<<<< HEAD
 @keyframes name {
     from {
         width: 0%;
@@ -142,7 +130,6 @@ a:hover {
 }
 
 
-=======
         /* Inicio Slider de Imagens  */
 
 .img {
@@ -195,7 +182,3 @@ a:hover {
 }
 
     /* Fim Slider de Imagens */
->>>>>>> c7fa3ecb7ab41f3f48c4edb055e63382c08fd6b4
-
-
-
