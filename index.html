@@ -2,26 +2,78 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Portfólio Luiz F. R. Pimentel</title>
-                    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Luiz F. R. Pimentel</title>
+    <!-- Navegação e início -->
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <link rel="stylesheet" href="assets/css/sobre-mim.css">
+    <!-- Fonte Letras Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Script do Slider de Imagens -->
+    <script src="assets/js/slider.js" defer></script>
+    <!-- Script de conteudos Gerais -->
+    <script src="assets/js/geral.js" defer></script>
+    <!-- CSS do Slider de Imagens -->
+    <link rel="stylesheet" href="assets/css/slider.css">
+    
+
+
 </head>
 <body>
+<header class="header">
+ <a class="logo" href="index.html"><img class="logo2" src="assets/img/logo.png"></a>
     
-    <form>
-        <p class="lf">
-        <a href="#">&lsaquo;LF/&rsaquo;</a>
+    <!-- Inicio do Menu Central -->
+<nav>
+ <ul class="menu">
+  <li><a href="#inicio">Inicio</a></li>
+  <li><a href="#sobre-mim">Sobre Mim</a></li>
+  <li><a href="#projetos">Projetos</a></li>
+  <li><a href="#habilidades">Habilidades</a></li> 
+ </ul>
+</nav>
+  <!-- Fim do Menu Central -->
+
+</header>
+<section id="inicio">
+ <div class="ajuste-altura">
+  <div class="centralizar">
+   <div class="ajustador">
+    <div class="apresentacao">
+     <p class="descricao">
+      Oi, eu sou <br />
+       <span class="meu-nome">
+      Luiz Fernando.</span>
+        <br /> Desenvolvedor Back-end
         </p>
-    </form>
-    
-    <nav id="menu">
-        <ul>
-            <li><a href="pages/home.html">Home</a></li>
-            <li><a href="pages/sobre.html">Sobre</a></li>
-            <li><a href="pages/experiencia.html">Experiência</a></li>
-            <li><a href="pages/projetos.html">Projetos</a></li>
-            <li><a href="pages/contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</body>
+       </div>
+       <div class="container">
+       <div class="container-img">
+       <buttton id="buttom-prev"><img src="assets/img/arrow.png" alt="seta"></buttton>
+       <div class="img">
+        <img src="assets/img/thumb.png" alt="imagem1" class="slider on">
+        <img src="assets/img/thumbKurumi.png" alt="imagem2" class="slider">
+      </div>
+     <button id="buttom-next"><img src="assets/img/arrow.png" alt="seta2"></button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+
+
+  <!-- <section class="sobre-mim">
+<div class="centralizar">
+<div class="nome"> Meu nome</div> 
+</div>
+</section> -->
+
+ </body>
 </html>
+
+
+
