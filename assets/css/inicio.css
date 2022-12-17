@@ -21,15 +21,15 @@
 }
 
 
-a {
+.menu2 {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-family: 'Bree Serif', serif;
-    transition: easyease-in-out 0.3s;
+    transition: .4s;
 }
 
-a:hover {
+.menu2:hover {
     color: yellow;
 }
 
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .meu-nome {
-    font-size: 60px;;
+    font-size: 70px;
 }
 
 .centralizar {
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .descricao {
-    font-size: 40px;
+    font-size: 35px;
     grid-area: descricao;
 }
 
