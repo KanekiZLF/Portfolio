@@ -11,12 +11,21 @@ function typeWriter(el) {
 typeWriter(meuNome);
 
 
+var url1 = "https://kanekizlf.github.io/Jogo-Samurai-JavaScript"
+var url2 = "https://kanekizlf.github.io/Jogo-Samurai-JavaScript"
+var url3 = "https://kanekizlf.github.io/Jogo-Samurai-JavaScript"
+
+
+function sobre(){
+    alert('Estou trabalhando nisso !')
+}
+
 function mario(){
-    alert("OK Mario")
+    alert('Estou trabalhando nisso !')
 }
 
 function samurai(){
-    alert("OK Samurai")
+    window.open(url1)
 }
 
 
